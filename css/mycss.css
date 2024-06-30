@@ -1,0 +1,101 @@
+
+.section {
+    padding: 60px 0;
+}
+
+.bgc-light {
+    background-color: #f9f9f9c7;
+}
+.section-head {
+    margin-bottom: 40px;
+}
+.portfolio .showcase-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+	 width: 100%; /* Ensure the item takes full width of its column */
+    max-width: 500px; /* Adjust the maximum width as needed */
+}
+
+.portfolio .showcase-item:hover {
+    transform: scale(1.05);
+}
+.showcase-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.showcase-item:hover .showcase-item-hover {
+    opacity: 1;
+}
+
+.showcase-item-info {
+    margin-bottom: 15px;
+}
+
+.showcase-item-category {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.showcase-item-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+	margin-bottom: 30px;
+}
+
+.showcase-item-title a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.showcase-item-title a:hover {
+    background: #f9e1c2;
+    color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-6, .col-lg-4 {
+        width: 100%;
+    }
+}
+
+        body, html {
+            
+            scroll-behavior: smooth;
+        }
+        
+      
+        .butn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+        .butn-light {
+            background-color: #FFF;
+        }
